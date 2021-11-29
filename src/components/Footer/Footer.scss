@@ -1,0 +1,66 @@
+@import "/src/breakpoints/breakpoints.scss";
+
+ //Переменные  SASS для компонента Header
+ $text-color: #fff;
+
+ .footer_info {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	width: 100%;
+	 @include media ("<=iPhonePlus") {
+        display: block;
+      }
+ }
+
+ .navbar_footer {
+ 	padding: 40px;
+	 @include media ("<=iPhonePlus") {
+        padding: 10px;
+      }
+ }
+
+ footer {
+ 	background: linear-gradient(to bottom right, #579ab2, #5bc6af);
+ 	box-shadow: 2px 5px 20px -3px rgba($color: #000000, $alpha: 1.0);
+ 	margin-top: 30px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+ 	.footer_text {
+ 		font-size: 14px;
+ 		padding-top: 16px;
+		 @include media ("<=tablet") {
+			font-size: 12px;
+			padding-top: 19px;
+		  }
+		  @include media ("<=iPhonePlus") {
+			text-align: center;
+		  }
+ 	}
+ }
+
+ .navbar_footer {
+ 	display: flex;
+ 	align-items: center;
+	 @include media ("<=iPhonePlus") {
+       justify-content: space-evenly;
+      }
+ 	:hover {
+ 		color: $text-color;
+ 		text-decoration: underline;
+ 	}
+
+ 	a {
+ 		text-decoration: none;
+ 		font-size: 18px;
+ 		margin-right: 25px;
+ 		color: #333;
+		 @include media ("<=tablet") {
+			font-size: 16px;
+		  }
+
+ 	}
+ }

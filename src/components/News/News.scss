@@ -1,0 +1,134 @@
+@import "/src/breakpoints/breakpoints.scss";
+//Переменные  SASS для компонента News
+$text-color: #fff;
+$color-for-text: #112223;
+
+.info_box {
+    padding-bottom: 120px;
+
+}
+
+.heading_news {
+    font-family: Acta, serif;
+    text-align: center;
+    color: #f3f3f3;
+
+    h1 {
+        font-size: 50px;
+
+        @include media ("<=desktop") {
+            font-size: 40px;
+        }
+
+        @include media ("<=SLdesktop") {
+            font-size: 35px;
+        }
+
+        @include media ("<=iPhonePlus") {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+
+        @include media ("<=SLdesktop") {
+            font-size: 18px;
+        }
+
+        @include media ("<=iPhonePlus") {
+            font-size: 16px;
+        }
+    }
+}
+
+.climate_info {
+    font-family: Acta, serif;
+    text-align: center;
+    margin: 0 60px 0 60px;
+
+    @include media ("<=SLdesktop") {
+        margin: 0;
+    }
+
+    p {
+        font-size: 16px;
+        color: $color-for-text;
+
+        @include media ("<=desktop") {
+            font-size: 15px;
+        }
+
+        @include media ("<=SLdesktop") {
+            font-size: 15px;
+        }
+
+    }
+
+    p:nth-child(3) {
+        text-align: center;
+        color: $text-color;
+        padding-bottom: 20px;
+        font-size: 20px;
+
+        @include media ("<=SLdesktop") {
+            font-size: 18px;
+        }
+
+        @include media ("<=iPhonePlus") {
+            font-size: 16px;
+        }
+    }
+}
+
+.climate_news {
+    display: flex;
+    font-family: Acta, serif;
+
+    @include media ("<=tablet") {
+        flex-direction: column-reverse;
+    }
+
+    img {
+        width: 375px;
+        height: 211px;
+        margin-bottom: 20px;
+
+        @include media ("<=tablet") {
+            width: auto;
+            height: auto;
+            margin-bottom: 40px;
+            padding-left: 21px;
+        }
+    }
+
+    .climate_news_info {
+        padding-left: 20px;
+        color: $color-for-text;
+
+        @include media ("<=SLdesktop") {
+            font-size: 15px;
+        }
+
+        @include media ("<=SLdesktop") {
+            font-size: 15px;
+        }
+
+        h3 {
+            color: $text-color;
+            font-weight: bold;
+
+            @include media ("<=SLdesktop") {
+                font-weight: 100;
+            }
+
+            @include media ("<=tablet") {
+                text-align: center;
+            }
+
+            @include media ("<=iPhonePlus") {
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "/src/breakpoints/breakpoints.scss";
+//Переменные  SASS для компонента Form
+$text-color : #fff;
+$border-bottom: 2px solid #74777c;
+$border-radius: 8px;
+
+.form_box {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+
+    form {
+        position: relative;
+    }
+
+    input {
+        border-radius: $border-radius;
+        width: 450px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-bottom: $border-bottom;
+        padding: 8px 37px 9px 15px;
+        @include media ("<=iPhonePlus") {
+            width: 100%;
+          }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            color: $text-color;
+        }
+    }
+    button {
+        text-transform: uppercase;
+        margin-left: 10px;
+        border-radius: $border-radius;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        background-color: #56cfae;
+        border-bottom: $border-bottom;
+        @include media ("<=iPhonePlus") {
+            width: 100%;
+            margin-top: 29px;
+            margin-left: 0;
+          }
+
+        &:not([disabled]):hover {
+            background-color: #5dcf93;
+            color: $text-color;
+        }
+
+        &:not([disabled]):focus {
+            background-color: #5dcf93;
+            color: $text-color;
+        }
+
+        &:not([disabled]):active {
+            transition: all 0s;
+            background-color: #0bdba2;
+            color: $text-color;
+        }
+    }
+    .form_error {
+        position: absolute;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #c61212;
+        transition: all 0.2s;
+    }
+    .form_loading {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -60px;
+    }
+    .form_loading:after {
+        content: " ";
+        display: block;
+        width: 40px;
+        height: 40px;
+        // margin       : 8px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        border-color: #76a1c3 transparent #76a1c3 transparent;
+        animation: form_loading_anim 1.2s linear infinite;
+    }
+    @keyframes form_loading_anim {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

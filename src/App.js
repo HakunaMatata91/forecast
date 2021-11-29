@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.scss';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import News from './components/News/News';
+import MainContent from './components/MainContent/MainContent';
+import { BrowserRouter, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      // BrowserRouter’s responsibility to store all the components and its routes as an object.
+      //Router is a statement that holds the specific path of the app along with the component’s name and renders it once it matches the URL.
+      <BrowserRouter>
+        <main className="for_page">
+          <Header />
+            <div className="pages">
+              <Route path="/" exact component={MainContent} /> 
+              <Route path="/news" exact component={News} />
+            </div>
+        <Footer />
+        </main>
+      </BrowserRouter>
+    );
+  }
 }
+
 
 export default App;

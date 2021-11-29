@@ -1,0 +1,16 @@
+@import "/src/breakpoints/breakpoints.scss";
+.main_content p {
+    font-family: Acta, serif;
+    font-size: 18px;
+    color: #f7efe9;
+    padding-bottom: 20px;
+    @include media ("<=SLdesktop") {
+        text-align: center;
+      }
+      @include media ("<=tablet") {
+        font-size: 16px;
+      }
+      @include media ("<=iPhonePlus") {
+        font-size: 14px;
+      }
+}
