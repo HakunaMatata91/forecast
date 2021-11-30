@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/forecast/static/css/main.d1aa21c4.chunk.css",
-    "main.js": "/forecast/static/js/main.b4d84987.chunk.js",
-    "main.js.map": "/forecast/static/js/main.b4d84987.chunk.js.map",
+    "main.css": "/forecast/static/css/main.a197fa42.chunk.css",
+    "main.js": "/forecast/static/js/main.25ba3b17.chunk.js",
+    "main.js.map": "/forecast/static/js/main.25ba3b17.chunk.js.map",
     "runtime-main.js": "/forecast/static/js/runtime-main.291e7e2b.js",
     "runtime-main.js.map": "/forecast/static/js/runtime-main.291e7e2b.js.map",
     "static/css/2.28bb0c3d.chunk.css": "/forecast/static/css/2.28bb0c3d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.15f9ebc8.chunk.js.map": "/forecast/static/js/3.15f9ebc8.chunk.js.map",
     "index.html": "/forecast/index.html",
     "static/css/2.28bb0c3d.chunk.css.map": "/forecast/static/css/2.28bb0c3d.chunk.css.map",
-    "static/css/main.d1aa21c4.chunk.css.map": "/forecast/static/css/main.d1aa21c4.chunk.css.map",
+    "static/css/main.a197fa42.chunk.css.map": "/forecast/static/css/main.a197fa42.chunk.css.map",
     "static/js/2.752e0af2.chunk.js.LICENSE.txt": "/forecast/static/js/2.752e0af2.chunk.js.LICENSE.txt",
     "static/media/China.13bb2a11.png": "/forecast/static/media/China.13bb2a11.png",
     "static/media/Christoph.c90b5624.png": "/forecast/static/media/Christoph.c90b5624.png",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.291e7e2b.js",
     "static/css/2.28bb0c3d.chunk.css",
     "static/js/2.752e0af2.chunk.js",
-    "static/css/main.d1aa21c4.chunk.css",
-    "static/js/main.b4d84987.chunk.js"
+    "static/css/main.a197fa42.chunk.css",
+    "static/js/main.25ba3b17.chunk.js"
   ]
 }
