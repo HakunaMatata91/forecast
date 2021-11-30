@@ -6,5 +6,6 @@ The temperature is accessed by using the Open Weather Map API, which provides us
 Here's a link to their website: https://openweathermap.org/
 
 Link URL to a deployed app on GitHub: https://hakunamatata91.github.io/forecast/#/
+
 Link URL to GitHub Repository: https://github.com/HakunaMatata91/forecast
 
