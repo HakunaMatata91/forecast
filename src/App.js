@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import News from './components/News/News';
 import MainContent from './components/MainContent/MainContent';
-import { HashRouter, Route, Switch} from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
@@ -15,14 +15,14 @@ class App extends React.Component {
       <HashRouter>
         <main className="for_page">
           <Header />
-            <div className="pages">
+          <div className="pages">
             <Switch>
-              <Route path="/" exact component={MainContent} /> 
+              <Route path="/" exact component={MainContent} />
               <Route path="/news" exact component={News} />
-             </Switch>
-            </div>
-        <Footer />
-        </main>
+            </Switch>
+          </div>
+          <Footer />
+          </main>
       </HashRouter>
     );
   }
