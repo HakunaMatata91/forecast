@@ -4,15 +4,15 @@ import Form from './Form/Form';
 import Weather from './Weather/Weather';
 import Info from './Info/Info.js';
 
-// Api ключ по которому получаем данные о погоде.
+// API_KEY fot weather from Open Weather Map API
 const API_KEY = "f3367a4e7b4e0dfcd667a045e6347dc1";
 
 class MainContent extends Component {
 
   constructor(props) {
-    // вызываем родительский конструктор
     super(props);
-    // задаем state с дефолтными значениями
+
+    // set state with default values
     this.state = {
       temp: undefined,
       feels_like: undefined,
@@ -28,12 +28,10 @@ class MainContent extends Component {
       loading: false,
       error: undefined
     };
-    // биндим правильный this
     this.getWeatherForCity = this.getWeatherForCity.bind(this);
     this.gettingWeather = this.gettingWeather.bind(this);
   }
-  
-
+    //Catching errors from Api
   async getWeatherForCity(city) {
     try {
       if (!city) throw new Error('City is not defined');
@@ -41,13 +39,13 @@ class MainContent extends Component {
       this.setState({
         loading: true
       });
-
+    // Fetch the weather data on page load
       const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
       const data = await response.json();
 
       console.log(data);
 
-      
+      // Config hour and minute
       let sunrise = new Date((data.sys.sunrise + data.timezone) * 1000);
       let sunset = new Date((data.sys.sunset + data.timezone) * 1000);
       let sunrise_date = sunrise.getUTCHours() + ":" + sunrise.getUTCMinutes();
@@ -92,7 +90,7 @@ class MainContent extends Component {
   }
 
   componentDidMount() {
-    // load default city
+    // Load default city
     this.getWeatherForCity('Kiev');
   }
 

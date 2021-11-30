@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Weather.scss';
 
+// Display data as configured dates
 const format_date = (d) => {
     let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -40,7 +41,6 @@ class Weather extends Component {
                         </div>
                     </div>
                 }
-                {/* <p>{this.props.error}</p> */}
 
                 <div className="image_box">
                     <div className="title_box">

@@ -4,11 +4,9 @@ import './Form.scss';
 
 class Form extends Component {
     constructor(props) {
-        // вызываем родительский конструктор
         super(props);
-        // задаем state с дефолтными значениями
+        // Load default city
         this.state = { cityName: 'Kyiv' };
-        // биндим правильный this
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }

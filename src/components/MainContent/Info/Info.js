@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './Info.scss';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faWind } from '@fortawesome/free-solid-svg-icons';
 import Wind_speed from '../image/wind.png';
 import Pressure from '../image/Pressure.png';
 import Sunset from '../image/sunset.png';

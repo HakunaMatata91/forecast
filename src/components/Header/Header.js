@@ -3,7 +3,7 @@ import '../Header/Header.scss';
 import logo from '../Header/logo.png';
 import { Link } from 'react-router-dom';
 
-
+//hamburger menu for mobile version
 class Header extends Component {
      constructor(props) {
        super(props);
@@ -34,42 +34,10 @@ class Header extends Component {
       
  
    }
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //       windowSize: "",
-    //       thumbWidth: 1400,
-    //       visible: true
-    //     };
-    //     this.handleResize = this.handleResize.bind(this);
-    //   }
-    
-    //   handleResize = () => {
-    //     const windowSize = window.innerWidth;
-    //     const thumbWidth = (windowSize >= 414 );
-    //     this.setState(prevState => {
-    //       return {
-    //         windowSize,
-    //         thumbWidth,
-    //         visible: false
-    //       };
-    //     });
-    //   };
-      
-    
-    //   componentDidMount() {
-    //     window.addEventListener("resize", this.handleResize);
-    //   }
-    
-    //   componentWillUnmount() {
-    //     window.removeEventListener("resize", this.handleResize);
-    //   }
-
     render() {
         let visible  = this.state.visible;
     
         return (
-            // Link is similar to the HREF link, which allows you to redirect to the specific components based on the specified path.
             <header>
                 <div className="container" >
                     <div className="header_info">
@@ -86,7 +54,7 @@ class Header extends Component {
                             <nav className="navbar"  id='slide_menu' style={{ display: (this.state.visible ? 'block' : 'none') }}>
                                 <ul >
                                     <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/news">News</Link></li>
+                                    <li><Link to="#news">News</Link></li>
                                 </ul>
                             </nav>
                         </div>
