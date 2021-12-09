@@ -2,7 +2,7 @@
 
 This web app on React displays the live weather data of any place in the world.
 - User-friendly interface;
-- 100% Responsive for all screen sizes;
+- Responsive for screen sizes from 1400px to 414px;
 - Fetched weather from openweathermap API;
 - Using error handling messages to improve the user experience.
 
