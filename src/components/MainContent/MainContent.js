@@ -82,8 +82,11 @@ class MainContent extends Component {
     let trimmedCityName = cityName.trim();
     let cityRegex = new RegExp(/^[a-zA-Z а-яА-Я]+(?:[\s-][a-zA-Z а-яА-Я]+)*$/);
     if (!cityRegex.test(trimmedCityName)){
-      alert("Enter the correct name of the city");
-      return;
+      // alert("Enter the correct name of the city");
+      return this.setState({
+        loading: false,
+        error: "Enter the correct name of the city",
+      });;
     }
 
     await this.getWeatherForCity(trimmedCityName);
