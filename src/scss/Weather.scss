@@ -1,4 +1,4 @@
-@import "/src/breakpoints/breakpoints.scss";
+@import "../scss/breakpoints/breakpoints.scss";
  
  //Переменные  SASS для компонента Info
  $text-color: #fff;
@@ -81,7 +81,7 @@
 
  .weather_box {
      display: flex;
-     justify-content: start;
+     justify-content: flex-start;
      margin-top: 5px;
      
 

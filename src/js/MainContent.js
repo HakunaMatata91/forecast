@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Content from './Content/Content';
-import Form from './Form/Form';
-import Weather from './Weather/Weather';
-import Info from './Info/Info.js';
+import Content from '../js/Content';
+import Form from '../js/Form';
+import Weather from '../js/Weather';
+import Info from '../js/Info';
 
 // API_KEY fot weather from Open Weather Map API
 const API_KEY = "f3367a4e7b4e0dfcd667a045e6347dc1";

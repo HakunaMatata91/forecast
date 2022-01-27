@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Weather.scss';
+import '../scss/Weather.scss';
 
 // Display data as configured dates
 const format_date = (d) => {

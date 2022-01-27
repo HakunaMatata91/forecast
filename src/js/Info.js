@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Info.scss';
-import Wind_speed from '../image/wind.png';
-import Pressure from '../image/Pressure.png';
-import Sunset from '../image/sunset.png';
-import Sunrise from '../image/Sunrise.png';
-import Humidity from '../image/Humidity.png';
+import '../scss/Info.scss';
+import Wind_speed from '../images/img_form/wind.png';
+import Pressure from '../images/img_form/Pressure.png';
+import Sunset from '../images/img_form/sunset.png';
+import Sunrise from '../images/img_form/Sunrise.png';
+import Humidity from '../images/img_form/Humidity.png';
 
 
 class Info extends Component {

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import News from './components/News/News';
-import MainContent from './components/MainContent/MainContent';
+import Header from './js/Header';
+import Footer from './js/Footer';
+import News from './js/News';
+import MainContent from './js/MainContent';
 import { HashRouter, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

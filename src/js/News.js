@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import './News.scss'
-import Madrid from './img.news/Madrid.png';
-import Christoph from './img.news/Christoph.png';
-import Fiji from './img.news/Fiji.png';
-import Texas from './img.news/Texas.png';
-import China from './img.news/China.png';
-import Flooding from './img.news/Flooding.png';
-import Seroja from './img.news/Seroja.png';
-import Moscow from './img.news/Moscow.png';
-import Northwest from './img.news/Northwest.png';
-import Oregon from './img.news/Oregon.png';
-import Germany from './img.news/Germany.png';
-import Greece from './img.news/Greece.png';
+import '../scss/News.scss'
+import Madrid from '../images/new_img/Madrid.png';
+import Christoph from '../images/new_img/Christoph.png';
+import Fiji from '../images/new_img/Fiji.png';
+import Texas from '../images/new_img/Texas.png';
+import China from '../images/new_img/China.png';
+import Flooding from '../images/new_img/Flooding.png';
+import Seroja from '../images/new_img/Seroja.png';
+import Moscow from '../images/new_img/Moscow.png';
+import Northwest from '../images/new_img/Northwest.png';
+import Oregon from '../images/new_img/Oregon.png';
+import Germany from '../images/new_img/Germany.png';
+import Greece from '../images/new_img/Greece.png';
 
 
 class News extends Component {
